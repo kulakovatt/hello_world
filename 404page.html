@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/lottie.js"></script>
+    <style>
+        body {
+            margin: 0;
+            background: #1A1A1A;
+            overflow: hidden;
+        }
+        .err_page {
+            height: 100vh;
+
+            background-color: #1A1A1A;
+        }
+        a {
+            text-decoration-line: none;
+            color: #B5DE10;
+        }
+        .back_main {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            font-family: "Cera Pro";
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="err_page" id="error"></div>
+    <a href="http://localhost:63342/hello%20world/index.html?_ijt=4p469v3pm1tjpgkobfglqhkua1&_ij_reload=RELOAD_ON_SAVE" class="back_main">← Вернуться на главную</a>
+    <script>
+        const anim = lottie;
+        anim.loadAnimation({
+            container: document.querySelector('#error'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: './js/404.json',
+        });
+    </script>
+</body>
+</html>
