@@ -3,7 +3,7 @@ html {
 }
 
 @font-face {
-    font-family: Fifaks; /* Имя шрифта */
+    font-family: "Fifaks"; /* Имя шрифта */
     src: url("../font/Fifaks10Dev1.ttf"); /* Путь к файлу со шрифтом */
 }
 
