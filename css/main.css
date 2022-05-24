@@ -345,7 +345,7 @@ span.read_text_white {
     background-image: url("../img/dino.png");
     background-size: 50px 50px;
     position: relative;
-    /*z-index: 100;*/
+    z-index: 100;
     top: 150px;
 }
 #cactus {
@@ -355,8 +355,8 @@ span.read_text_white {
     background-size: 20px 40px;
     position: relative;
     top: 110px;
-    /*left: 580px;*/
-    /*z-index: 100;*/
+    left: 580px;
+    z-index: 100;
     animation: cactusMove 1.5s infinite linear;
     animation-play-state: paused;
 }

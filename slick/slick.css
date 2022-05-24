@@ -162,13 +162,13 @@
 .slick-prev
 {
     left: -40px;
-    background-image: url("/img/prev.png");
+    background-image: url("../img/prev.png");
     background-size: contain;
 }
 
 .slick-prev:before
 {
-    background-image: url("/img/prev.png");
+    background-image: url("../img/prev.png");
     background-size: contain;
 }
 
@@ -176,12 +176,12 @@
 .slick-next
 {
     right: -35px;
-    background-image: url("/img/next.png");
+    background-image: url("../img/next.png");
     background-size: contain;
 }
 
 .slick-next:before
 {
-    background-image: url("/img/next.png");
+    background-image: url("../img/next.png");
     background-size: contain;
 }

@@ -23,6 +23,7 @@ let isAlive = setInterval(function (){
 
     if(cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140){
         alert("GAME OVER");
+        cactus.style.left = '580px';
         //TODO: возможно заменить алерт на отображение текста в блоке игры
         cactus.style.animationPlayState = "paused";
     }
