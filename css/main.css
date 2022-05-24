@@ -357,8 +357,6 @@ span.read_text_white {
     top: 110px;
     left: 580px;
     z-index: 100;
-    animation: cactusMove 1.5s infinite linear;
-    animation-play-state: paused;
 }
 
 @keyframes cactusMove {

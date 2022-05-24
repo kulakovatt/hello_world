@@ -3,7 +3,7 @@ const cactus = document.getElementById('cactus');
 
 document.addEventListener('keydown', function (e){
     if(e.key == "Escape"){
-        cactus.style.animationPlayState = "running";
+        cactus.style.setProperty('animation', 'cactusMove 1.5s infinite linear');
     }
     jump();
 });
@@ -22,9 +22,10 @@ let isAlive = setInterval(function (){
     let cactusLeft = parseInt(window.getComputedStyle(cactus).getPropertyValue('left'));
 
     if(cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140){
+        cactus.style.removeProperty('animation');
         alert("GAME OVER");
-        cactus.style.left = '580px';
+
         //TODO: возможно заменить алерт на отображение текста в блоке игры
-        cactus.style.animationPlayState = "paused";
+
     }
-}, 10)
+}, 10);
