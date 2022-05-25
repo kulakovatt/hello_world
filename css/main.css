@@ -758,6 +758,7 @@ select:-webkit-autofill:focus {
 }
 
 .footer {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
 }
