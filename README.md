@@ -1,3 +1,4 @@
 # hello_world
 
-Website of IT-courses "Hello_World"
+
+Interactive, adaptive website of IT-courses "Hello_World"
