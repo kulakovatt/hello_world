@@ -14,25 +14,26 @@
         </div>
     </div>
     <div class="menu">
-        <div class="elem"><a href="#main">//hello world</a></div>
+        <div class="elem elemlogo"><a href="#main">//hello world</a></div>
         <div class="elem"><a href="#course">курсы</a></div>
         <div class="elem"><a href="#about">о нас</a></div>
         <div class="elem"><a href="#feedback">отзывы</a></div>
         <div class="elem"><a href="#question">FAQ</a></div>
+        <div class="burger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+    
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#course">курсы</a></li>
+                <li><a class="menu__item" href="#about">о нас</a></li>
+                <li><a class="menu__item" href="#feedback">отзывы</a></li>
+                <li><a class="menu__item" href="#question">FAQ</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="burger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-            <span></span>
-        </label>
-
-        <ul class="menu__box">
-            <li><a class="menu__item" href="#course">курсы</a></li>
-            <li><a class="menu__item" href="#about">о нас</a></li>
-            <li><a class="menu__item" href="#feedback">отзывы</a></li>
-            <li><a class="menu__item" href="#question">FAQ</a></li>
-        </ul>
-    </div>
+    
     <button class="feedback_button" id="button1"><img src="img/feedback_form.svg" width="58" height="58"></button>
     <div id="content1">
         <p style="font-weight: bold">Обратная связь</p>
@@ -105,7 +106,7 @@
                 <div id="dino"></div>
                 <div id="cactus"></div>
             </div>
-            <p class="headline">Наши преподаватели</p>
+            <p class="headline headline_teacher">Наши преподаватели</p>
             <div class="slider_teacher">
                 <div>
                     <svg  width="260" height="270" viewBox="0 0 260 270" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -815,7 +816,8 @@
             $('.slider_teacher').slick({
                 infinite: false,
                 slidesToShow: 3,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                
         });
         });
     </script>
